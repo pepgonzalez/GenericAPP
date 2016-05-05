@@ -1,0 +1,3 @@
+com\generic\shared\dto\GenericDTO.class
+com\generic\shared\utils\GenericUtils.class
+com\generic\service\IGenericService.class
