@@ -1,5 +1,7 @@
 package com.generic.service.impl;
 
+import java.util.Date;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +22,10 @@ public class GenericService implements IGenericService {
 		LOG.debug("metodo test");
 		int result = genericDAO.test();
 		LOG.debug("Resultado de DAO: " + result); 
+		
+		LOG.debug("invocando test date: ");
+		Date date = genericDAO.testDate();
+		LOG.debug("Resultado de date: " + date);
 	}
 
 }

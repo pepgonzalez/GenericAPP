@@ -1,2 +1,3 @@
 com\generic\persistence\dao\IGeneric.class
 com\generic\persistence\dao\impl\GenericDAO.class
+com\generic\persistence\base\BaseDAO.class
