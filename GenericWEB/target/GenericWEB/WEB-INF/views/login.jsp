@@ -8,8 +8,9 @@
 	</head>
 	<body>
 		<h2>Bienvenido</h2>
-		<c:url var="loginUrl" value="/j_spring_security_check"/> 
+		<c:url var="loginUrl" value="/login"/> 
 		<form action="${loginUrl}" name="f" method="POST">
+		<input type="hidden" name="${_csrf.parameterName}"   value="${_csrf.token}" />
 			<table>
 				<tr>
 					<td>Usuario:</td>
