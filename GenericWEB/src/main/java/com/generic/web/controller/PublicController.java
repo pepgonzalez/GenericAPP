@@ -37,20 +37,4 @@ public class PublicController {
 		LOG.debug("mostrando index logueado");
 		return "auth";
 	}
-	
-	@RequestMapping("/403")
-	public String showPermisionDenied(Principal user){
-		LOG.debug("mostrando permiso denegado");
-		genericService.test();
-		return "403";
-	}
-	
-	@RequestMapping(value="/logout", method = RequestMethod.GET)
-	public String doLogout (HttpServletRequest request, HttpServletResponse response) {
-	    Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-	    if (auth != null){    
-	        new SecurityContextLogoutHandler().logout(request, response, auth);
-	    }
-	    return "redirect:/login?logout";
-	}
 }

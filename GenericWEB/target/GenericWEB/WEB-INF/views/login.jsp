@@ -8,6 +8,12 @@
 	</head>
 	<body>
 		<h2>Bienvenido</h2>
+		<c:if test="${param.error != null }">
+			<span style="border:solid red 1px;">Error de credenciales!</span>
+		</c:if>
+		<c:if test="${param.exit != null }">
+			<span style="border:solid green 1px;">Session Cerrada exitosamente</span>
+		</c:if>
 		<c:url var="loginUrl" value="/login"/> 
 		<form action="${loginUrl}" name="f" method="POST">
 		<input type="hidden" name="${_csrf.parameterName}"   value="${_csrf.token}" />

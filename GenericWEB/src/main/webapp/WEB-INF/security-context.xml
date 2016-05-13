@@ -11,11 +11,10 @@
 			a /auth/* -->
 		<security:intercept-url pattern="/auth/**" access="isAuthenticated()" />
 		<security:form-login default-target-url="/auth/"
-			always-use-default-target="true" 
-			username-parameter="j_username"
-			password-parameter="j_password" 
-			login-page="/login" />
-			<security:csrf/>
+			always-use-default-target="true" username-parameter="j_username"
+			password-parameter="j_password" login-page="/login"
+			authentication-failure-url="/login?error=true " />
+		<security:csrf/>
 		<security:access-denied-handler error-page="/403" />
 		
 	</security:http>
