@@ -10,7 +10,7 @@
 		<!-- solo los usuario con el rol ROLE_ADMIN, pueden ver todo lo relacionado 
 			a /auth/* -->
 		<security:intercept-url pattern="/auth/**" access="hasRole('ROLE_ADMIN')" />
-		<security:form-login default-target-url="/auth/" />
+		<security:form-login default-target-url="/auth/" always-use-default-target="true"/>
 		<security:access-denied-handler error-page="/403" />
 		
 	</security:http>
