@@ -7,6 +7,7 @@
 		<title>Acceso denegado</title>
 	</head>
 	<body>
+		<c:import url="/WEB-INF/views/menu.jsp"/>
 		<h2>Lo sentimos, no cuenta con acceso para este contenido. Favor de contactar con el administrador</h2>
 		<a href="<c:url value="/logout" />">Logout</a>
 	</body>

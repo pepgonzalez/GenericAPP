@@ -7,6 +7,7 @@
 		<title>GenericAPP | Iniciar Sesion</title>
 	</head>
 	<body>
+		<c:import url="/WEB-INF/views/menu.jsp"/>
 		<h2>Bienvenido</h2>
 		<c:if test="${param.error != null }">
 			<span style="border:solid red 1px;">Error de credenciales!</span>

@@ -7,7 +7,7 @@
 		<title>Inicio</title>
 	</head>
 	<body>
-			<a href="<c:url value="/logout" />">Logout</a>
+		<c:import url="/WEB-INF/views/menu.jsp"/>
 		<h2>Hola Mundo usuario logueado!</h2>
 	</body>
 </html>

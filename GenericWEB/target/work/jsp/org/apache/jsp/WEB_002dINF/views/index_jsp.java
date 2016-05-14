@@ -9,10 +9,20 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.Vector _jspx_dependants;
 
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_import_url_nobody;
+
   private org.apache.jasper.runtime.ResourceInjector _jspx_resourceInjector;
 
   public Object getDependants() {
     return _jspx_dependants;
+  }
+
+  public void _jspInit() {
+    _jspx_tagPool_c_import_url_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+  }
+
+  public void _jspDestroy() {
+    _jspx_tagPool_c_import_url_nobody.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -44,12 +54,17 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\r\n");
       out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
+      out.write("\r\n");
       out.write("<html>\r\n");
       out.write("\t<head>\r\n");
       out.write("\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
       out.write("\t\t<title>Index.jsp</title>\r\n");
       out.write("\t</head>\r\n");
       out.write("\t<body>\r\n");
+      out.write("\t\t");
+      if (_jspx_meth_c_import_0(_jspx_page_context))
+        return;
+      out.write("\r\n");
       out.write("\t\t<h2>Hola Mundo!</h2>\r\n");
       out.write("\t</body>\r\n");
       out.write("</html>");
@@ -63,5 +78,31 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     } finally {
       if (_jspxFactory != null) _jspxFactory.releasePageContext(_jspx_page_context);
     }
+  }
+
+  private boolean _jspx_meth_c_import_0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:import
+    org.apache.taglibs.standard.tag.rt.core.ImportTag _jspx_th_c_import_0 = (org.apache.taglibs.standard.tag.rt.core.ImportTag) _jspx_tagPool_c_import_url_nobody.get(org.apache.taglibs.standard.tag.rt.core.ImportTag.class);
+    _jspx_th_c_import_0.setPageContext(_jspx_page_context);
+    _jspx_th_c_import_0.setParent(null);
+    _jspx_th_c_import_0.setUrl("/WEB-INF/views/menu.jsp");
+    int[] _jspx_push_body_count_c_import_0 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_import_0 = _jspx_th_c_import_0.doStartTag();
+      if (_jspx_th_c_import_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_import_0[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_import_0.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_import_0.doFinally();
+      _jspx_tagPool_c_import_url_nobody.reuse(_jspx_th_c_import_0);
+    }
+    return false;
   }
 }
