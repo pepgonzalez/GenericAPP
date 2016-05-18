@@ -1,4 +1,5 @@
-com\generic\web\security\CustomUserDetailService.class
-com\generic\web\security\CustomAuthenticationProvider.class
 com\generic\web\controller\LoginController.class
+com\generic\web\security\CustomAuthenticationFailureHandler.class
+com\generic\web\security\CustomAuthenticationProvider.class
+com\generic\web\security\CustomUserDetailService.class
 com\generic\web\controller\PublicController.class

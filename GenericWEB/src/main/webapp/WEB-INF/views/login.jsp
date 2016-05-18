@@ -12,6 +12,9 @@
 		<c:if test="${param.error != null }">
 			<span style="border:solid red 1px;">Error de credenciales!</span>
 		</c:if>
+		<c:if test="${param.userNotFound != null }">
+			<span style="border:solid red 1px;">Usuario no encontrado!</span>
+		</c:if>
 		<c:if test="${param.exit != null }">
 			<span style="border:solid green 1px;">Session Cerrada exitosamente</span>
 		</c:if>

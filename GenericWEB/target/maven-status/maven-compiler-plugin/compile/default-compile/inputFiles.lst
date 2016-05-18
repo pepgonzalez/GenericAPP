@@ -1,4 +1,5 @@
 C:\workspaces\generic\GenericAPP\GenericWEB\src\main\java\com\generic\web\controller\LoginController.java
+C:\workspaces\generic\GenericAPP\GenericWEB\src\main\java\com\generic\web\security\CustomAuthenticationFailureHandler.java
 C:\workspaces\generic\GenericAPP\GenericWEB\src\main\java\com\generic\web\controller\PublicController.java
 C:\workspaces\generic\GenericAPP\GenericWEB\src\main\java\com\generic\web\security\CustomAuthenticationProvider.java
 C:\workspaces\generic\GenericAPP\GenericWEB\src\main\java\com\generic\web\security\CustomUserDetailService.java
