@@ -1,4 +1,7 @@
+com\generic\persistence\dao\IUser.class
+com\generic\persistence\base\SQLConstants.class
 com\generic\persistence\dao\impl\UserDAO.class
 com\generic\persistence\base\BaseDAO.class
-com\generic\persistence\dao\IUser.class
+com\generic\persistence\base\QueryContainer.class
 com\generic\persistence\dao\IBase.class
+com\generic\persistence\mapper\UserMapper.class

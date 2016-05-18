@@ -1,4 +1,7 @@
 C:\workspaces\generic\GenericAPP\GenericPersistence\src\main\java\com\generic\persistence\dao\IUser.java
 C:\workspaces\generic\GenericAPP\GenericPersistence\src\main\java\com\generic\persistence\dao\impl\UserDAO.java
+C:\workspaces\generic\GenericAPP\GenericPersistence\src\main\java\com\generic\persistence\base\SQLConstants.java
+C:\workspaces\generic\GenericAPP\GenericPersistence\src\main\java\com\generic\persistence\mapper\UserMapper.java
 C:\workspaces\generic\GenericAPP\GenericPersistence\src\main\java\com\generic\persistence\base\BaseDAO.java
+C:\workspaces\generic\GenericAPP\GenericPersistence\src\main\java\com\generic\persistence\base\QueryContainer.java
 C:\workspaces\generic\GenericAPP\GenericPersistence\src\main\java\com\generic\persistence\dao\IBase.java

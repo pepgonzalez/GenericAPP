@@ -1,6 +1,6 @@
+com\generic\service\ICommonService.class
 com\generic\shared\dto\UserDTO.class
 com\generic\shared\dto\GenericDTO.class
 com\generic\shared\dto\BaseDTO.class
 com\generic\shared\utils\GenericUtils.class
 com\generic\shared\dto\RoleDTO.class
-com\generic\service\IGenericService.class

@@ -9,6 +9,6 @@
 </sec:authorize>
 <sec:authorize access="isAuthenticated()">
 	<sec:authentication property="principal" var="principal"/>
-	Bienvenido: <c:out value="${principal.username}"/>
+	Bienvenido: <c:out value="${principal}"/>
 	<a href="<c:url value="/logout" />">Logout</a>
 </sec:authorize>
