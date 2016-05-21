@@ -9,6 +9,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -16,6 +17,9 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 
 	@Autowired
 	private CustomUserDetailService customUserDetailService;
+	
+	@Autowired
+	private PasswordEncoder passwordEncoder;
 	
 	private static final Logger LOG = LoggerFactory.getLogger(CustomUserDetailService.class);
 	
@@ -37,7 +41,10 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 			throw new BadCredentialsException("usuario no encontrado");
 		}
 		
-		if(u.getPassword().equals(credentials)){
+		String criptoPass = passwordEncoder.encode(u.getPassword());
+		LOG.info("Coded pass: " + criptoPass);
+		
+		if(passwordEncoder.matches(credentials, passwordEncoder.encode(u.getPassword()))){
 			LOG.debug("Login correcto");
 			return new UsernamePasswordAuthenticationToken(principal, credentials, u.getAuthorities());
 		}else{

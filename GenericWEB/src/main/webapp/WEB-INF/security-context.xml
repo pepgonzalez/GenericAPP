@@ -38,4 +38,9 @@
 	<bean id="customAuthenticationFailureHandler"
 		class="com.generic.web.security.CustomAuthenticationFailureHandler">
 	</bean>
+	
+	<bean id="passwordEncoder"
+		class="org.springframework.security.crypto.password.StandardPasswordEncoder">
+	</bean>
+	
 </beans>
